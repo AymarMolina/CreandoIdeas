@@ -1,0 +1,73 @@
+#img{
+    background-image: url("../../../../assets/Logo.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.login{
+    padding: 0 9rem;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    display: flex;
+    justify-content: space-between;
+}
+.input a{
+    font-size: 12px;
+}
+.btn {
+    background-color: #00B40D;
+    color: white;
+    margin-top: 1rem;
+    width: 100%;
+}
+#but{
+    width: 100%;
+}
+.comente{
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+
+}
+.comente span{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+hr{
+    flex-grow: 4;
+}
+#log{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    margin-top: 15px;
+}
+.regis{
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+
+}
+a:hover{
+    cursor: pointer;
+    opacity: 2;
+}
+span span{
+    color: rgb(65, 94, 255);
+}
+span span:hover{
+    cursor: pointer;
+    opacity: 2;
+    color: rgb(0, 37, 250);
+}

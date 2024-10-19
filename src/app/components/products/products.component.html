@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="container">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="">Inicio</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Productos</li>
+            </ol>
+          </nav>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <app-filter></app-filter>
+        </div>
+        <div class="col-9">
+            <div class="container-fluid d-flex ">
+                <h5>Hogar</h5>
+                <div class="container-fluid d-flex justify-content-end align-center">
+                    
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Ordenar por
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Mas comprado</a></li>
+                          <li><a class="dropdown-item" href="#">Mas nuevo</a></li>
+                          <li><a class="dropdown-item" href="#">Otros</a></li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+            <div class="container"id="pro">
+                <app-card-product></app-card-product>
+                <app-card-product></app-card-product>
+                <app-card-product></app-card-product>
+                <app-card-product></app-card-product>
+                <app-card-product></app-card-product>
+
+            </div>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item disabled">
+                    <a class="page-link">Anterior</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Siguiente</a>
+                  </li>
+                </ul>
+              </nav>
+        </div>
+    </div>
+</div>

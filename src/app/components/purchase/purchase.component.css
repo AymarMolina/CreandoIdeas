@@ -1,0 +1,11 @@
+.col-7{
+    border: solid thin #F0EEED;
+    border-radius: 20px;
+    padding: 1rem 2rem;
+}
+.btn{
+    margin-top: 2rem;
+    background-color: #289346;
+    width: 70%;
+    color:white
+}

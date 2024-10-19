@@ -1,0 +1,53 @@
+<div class="container-fluid"id="Cont">
+    <div class="container-fluid" id="ale" *ngIf="isBannerVisible">
+        <div class="texto">
+          <span>Registrate para desbloquear un 20% de descuento</span>
+        </div>
+        <div class="but" (click)="closeBanner()">
+          <span>X</span>
+        </div>
+      </div>
+  <div class="container-fluid" id="nav">
+    <div class="row align-items-center">
+      <div class="col-2 col-md-2 logo">
+        <span>Creando </span>
+        <span> ideas</span>
+      </div>
+      
+      <div class="col-8 col-md-9">
+        <div class="lista">
+          <div class="dropdown">
+            <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Productos
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Opción 1</a></li>
+              <li><a class="dropdown-item" href="#">Opción 2</a></li>
+              <li><a class="dropdown-item" href="#">Opción 3</a></li>
+            </ul>
+          </div>
+  
+          <a href="#">Informacion</a>
+          <a href="#">Nuevo</a>
+  
+          <div class="barraBusq">
+            <div class="input-group">
+              <span class="input-group-text">
+                <mat-icon>search</mat-icon>
+              </span>
+              <input type="text" class="form-control" placeholder="Buscar...">
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-2 col-md-1 text-end icons">
+        <mat-icon>add_shopping_cart</mat-icon>
+        <mat-icon>person_pin</mat-icon>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+</div>

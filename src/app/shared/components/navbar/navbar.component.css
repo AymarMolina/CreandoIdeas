@@ -1,0 +1,124 @@
+#Cont{
+    padding: 0;
+}
+#ale{
+    padding: 0.4rem;
+    display: flex;
+    justify-content: center;
+    background-color: #00B40D;
+    color: white;
+}
+.texto{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 60%;
+}
+.but{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+#nav {
+    padding: 25px 15px;
+    background-color: #ffffff;
+  }
+  
+  .logo{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .logo span {
+    font-size: 35px;
+    color: #343a40;
+    display: block;
+  }
+  
+  .lista {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  
+  .lista a {
+    text-decoration: none;
+    color: #343a40;
+    padding: 0 10px;
+  }
+  
+  .barraBusq {
+    flex-grow: 1;
+  }
+  
+  .input-group {
+    width: 100%;
+  }
+  
+  .input-group-text {
+    background-color: #e9ecef;
+    border: none;
+  }
+  
+  .form-control {
+    border: none;
+    background-color: #e9ecef;
+    padding: 8px;
+  }
+  
+  .form-control:focus {
+    box-shadow: none;
+  }
+  
+  .dropdown .btn {
+    background:inherit; 
+    border: none;
+  }
+  
+  .dropdown-menu {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+  }
+  
+  .icons mat-icon {
+    font-size: 28px;
+    color: #343a40;
+  }
+  @media (max-width: 768px) {
+    .logo span {
+      font-size: 18px;
+    }
+  
+    .lista {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .barraBusq {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .dropdown-menu {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .input-group {
+      width: 70%; 
+    }
+  }
+.icons{
+    justify-content: space-evenly;
+}
+.input-group{
+    width: 100%;
+}

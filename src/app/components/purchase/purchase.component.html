@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="container">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="">Inicio</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Carro</li>
+            </ol>
+          </nav>
+    </div>
+    <div class="container">
+        <h5>Tu carro</h5>
+    </div>
+    <div class="row">
+        <div class="col-7">
+            <app-product-cart></app-product-cart>
+            <app-product-cart></app-product-cart>
+        </div>
+        <div class="col-5">
+            <div class="card" >
+                <div class="card-body">
+                  <h5 class="card-title">Resumen del pedido</h5>
+                  <div class="container d-flex justify-content-between">
+                    <label for="">Subtotal</label>
+                    <label for="">precio</label>
+                  </div>
+                  <div class="container d-flex justify-content-between">
+                    <label for="">Descuento</label>
+                    <label for="">precio</label>
+                  </div>
+                  <div class="container d-flex justify-content-between">
+                    <label for="">Tarifa de entrega</label>
+                    <label for="">precio</label>
+                  </div>
+                  <hr>
+                  <div class="container d-flex justify-content-between">
+                    <label for="">Total</label>
+                    <label for="">precio</label>
+                  </div>
+
+                  <div class="container text-center">
+                    <button type="button" class="btn">Ir a caja    -></button>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>

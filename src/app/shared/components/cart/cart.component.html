@@ -1,0 +1,21 @@
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" #offcanvas>
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">CARRITO</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" (click)="closeOffcanvas()" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div *ngFor="let carta of apiDataCard">
+        <hr>
+        <app-cart-sidebar [id]="carta.id" [img]="carta.img" [name]="carta.name"[price]="carta.price"[tickets]="carta.cantidad"[price]="carta.price"[max]="carta.disponible"[color]="carta.color"[talla]="carta.talla"></app-cart-sidebar>
+      </div>
+      <div>
+        <hr>
+        <div class="offcanvas-total">
+          <label id="total"><strong>Total</strong><strong>{{ totalPrice ? '$ ' + totalPrice.toFixed(2) : '$ 0.00' }}</strong></label>
+        </div>
+        <div class="bot text-center mt-3" [ngClass]="{'disabled': apiDataCard.length === 0}">
+          <a data-bs-dismiss="offcanvas" routerLink="/inicio//carro">PAGAR</a>
+        </div>
+      </div>
+    </div>
+</div>

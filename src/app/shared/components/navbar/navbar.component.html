@@ -11,7 +11,7 @@
     <div class="row align-items-center">
       <div class="col-2 col-md-2 logo">
         <span>Creando </span>
-        <span> ideas</span>
+        <a href="/inicio"><span> ideas</span></a>
       </div>
       
       <div class="col-8 col-md-9">
@@ -21,7 +21,7 @@
               Productos
             </button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Opción 1</a></li>
+              <li><a class="dropdown-item" href="inicio/productos">Productos</a></li>
               <li><a class="dropdown-item" href="#">Opción 2</a></li>
               <li><a class="dropdown-item" href="#">Opción 3</a></li>
             </ul>
@@ -42,8 +42,9 @@
       </div>
   
       <div class="col-2 col-md-1 text-end icons">
-        <mat-icon>add_shopping_cart</mat-icon>
-        <mat-icon>person_pin</mat-icon>
+        <button class="nav-link d-flex" data-bs-toggle="offcanvas" href="#offcanvasExample" aria-controls="offcanvasExample">
+          <mat-icon>shopping_cart</mat-icon>
+        </button>
       </div>
     </div>
   </div>
@@ -51,3 +52,4 @@
   
   
 </div>
+<app-cart #carrito></app-cart>

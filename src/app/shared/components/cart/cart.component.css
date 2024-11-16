@@ -1,0 +1,104 @@
+
+#carrito {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    margin-left: 1rem;
+}
+
+.content-below-navbar {
+    margin-top: 70px;
+}
+
+#total {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'antonio', sans-serif;
+}
+
+.bot {
+    padding: 0.5rem;
+    background-color: #289346;
+}
+
+.bot a {
+    color: white;
+    letter-spacing: 3px;
+}
+.disabled {
+    pointer-events: none;
+    opacity: 0.5; 
+    cursor: not-allowed;
+  }
+
+
+.dropdown-menu {
+    background-color: black;
+    color: white;
+    border-top: solid 2px white;
+    border-radius: 0;
+}
+
+.dropdown-menu .dropdown-item {
+    color: white;
+}
+
+.dropdown-menu .dropdown-item:focus,
+.dropdown-menu .dropdown-item:hover {
+    background-color: black;
+    color: white;
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.res {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 900px) {
+    .offcanvas-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .res {
+        visibility: visible;
+        margin-right: 1rem;
+    }
+
+    #carrito {
+        display: none;
+    }
+}
+
+.offcanvas-title{
+    font-family: 'Oswald';
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 44.46px;
+    text-align: left;
+    color: #000000;
+}
+.offcanvas-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 1040; 
+    opacity: 0; 
+    transition: opacity 0.15s ease-in-out; 
+  }
+  
+  
+  .offcanvas.show ~ .offcanvas-backdrop {
+    opacity: 1; 
+  }

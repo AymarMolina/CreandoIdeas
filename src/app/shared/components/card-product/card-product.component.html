@@ -1,9 +1,13 @@
-<div class="card" style="width: 13.5rem;">
-    <img src="./media/Logo.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <p>Nombre</p>
-      <p>Estrellas</p>
-      <p class="card-text">Precio</p>
-      <p></p>
+<div class="pro">
+  <div class="contain"*ngFor="let carta of apiDataCard">
+    <div class="card" (click)="descripEvent(carta.id)" style="width: 13.5rem;">
+      <img [src]="carta.imagen_url" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p>{{ carta.nombre }}</p>
+          <p class="card-text">{{ '$ ' + carta.precio }}</p>
+          <p></p>
+        </div>
     </div>
+  
+  </div>
 </div>

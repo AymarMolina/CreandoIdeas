@@ -2,11 +2,7 @@
     background-color: inherit;
     border:none
 }
-#pro{
-        display: flex;
-        flex-wrap: wrap;
-        gap:15px;
-}
+
 a{
     text-decoration: none;
 }

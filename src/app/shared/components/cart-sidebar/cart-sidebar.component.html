@@ -1,0 +1,26 @@
+<div class="product">
+    <div class="detailsProduct">
+      <img [src]="img" alt="Product Image">
+      <div class="descripProduct">
+        <label>{{ name }}</label>
+        <label for="">Color: {{color}}</label>
+        <label for="">Talla: {{talla}}</label>
+      </div>
+    </div>
+    <div class="button">
+      <div id="item">
+        <a (click)="decrease()">-</a>
+      </div>
+      <div id="item">
+        <a>{{ tickets }}</a>
+      </div>
+      <div id="item"> 
+        <a (click)="increase()">+</a>
+      </div>
+    </div>
+  </div>
+  <div class="price">
+    <span>{{ price ? 'S/. ' +price.toFixed(2):'0.00' }}</span><br>
+    <button class="remove-button" (click)="removeProduct()">REMOVE</button>
+  </div>
+  

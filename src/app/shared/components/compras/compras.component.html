@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="card" >
+      <div class="body">
+        <h3 class="title">{{nombreEvento}}</h3>
+        <div class="row">
+          <div class="col">Date:</div>
+          <div class="col">{{dia}}</div> 
+        </div>
+        <div class="row">
+          <div class="col">Time:</div>
+          <div class="col">{{time}}</div>
+        </div>
+        <div class="row">
+          <div class="col">Location:</div>
+          <div class="col">{{location}}</div>
+        </div>
+      </div>
+      <div class="body">
+          <h5 class="title">TICKETS</h5>
+          <div class="row">
+            <div class="col">
+              <h6>
+                  {{nombreEvento}}
+              </h6>
+          </div>
+          </div>
+          <div class="row">
+            <div class="col precio">{{'$ '+price}}</div>
+            <div class="col">
+              <div class="button"[ngClass]="{'disabled': max<1}">
+                <div id="item">
+                  <a id="op" (click)="decrease()">-</a>
+                </div>
+                <div id="item">
+                  <a>{{ cant }}</a>
+                </div>
+                <div id="item"> 
+                  <a id="op" (click)="increase()">+</a>
+                </div>
+              </div>   
+            </div>
+          </div>
+      </div>
+       <a class="cart text-center" [ngClass]="{'disabled': max<1}">
+          <button class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" (click)="add()">
+            {{max >0 ? "ADD TO CART" : "NOT AVAILABLE" }}
+          </button>
+       </a>
+  </div>
+  
+  </div>
+    

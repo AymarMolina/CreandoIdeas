@@ -1,0 +1,77 @@
+<div class="container d-flex">
+    <div class="container d-flex">
+        <div class="det"*ngFor="let variante of filteredVariantes">
+            <div *ngFor="let image of variante.imagenes">
+                <img [src]="image.url" alt="Imagen pequeña" 
+                     (click)="changeMainImage(image.url)" class="small-img">
+              </div>
+        </div>
+        <div class="card">
+            <img [src]="mainImage" class="card-img-top" alt="Imagen grande">
+          </div>
+    </div>
+    
+    <div class="card"id="pr">
+        <h1>{{nom}}</h1>
+        <h5>{{'S/. '+precio}}</h5>
+        <label for="">{{descripcion}}</label>
+        <label for=""id="colorL">COLOR: {{selectedColor.toUpperCase()}}</label>
+        <div class="color-filters">
+            <div class="cul" *ngFor="let color of col">
+              <img [src]="color.imagenUrl" alt="" (click)="filterVariantesByColor(color.color)" 
+                   [class.active]="selectedColor === color.color">
+              <div class="co">
+                <div class="tal" *ngIf="selectedColor === color.color">
+                  <div *ngFor="let talla of color.tallas" class="tall">
+                    <button (click)="talla23(talla)" [class.active]="selectedTalla === talla">
+                      {{talla}}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="bot">
+           <div class="row">
+                <div *ngIf="categoria==='ropa'">
+                    <div class="col"[ngClass]="{'disabled': selectedTalla === ''}">
+                        <div class="bton">
+                            <div class="res"(click)="decrease()" >
+                                <label for="">-</label>
+                            </div>
+                            <div class="cant">
+                                <label for="">{{cant}}</label>
+                            </div>
+                            <div class="mas"(click)="increase()">
+                                <label for="">+</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" [ngClass]="{'disabled': selectedTalla === ''}">
+                        <button (click)="addCart()" [disabled]="selectedTalla === ''">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div *ngIf="categoria==='accesorio'">
+                    <div class="col">
+                        <div class="bton">
+                            <div class="res"(click)="decrease()" >
+                                <label for="">-</label>
+                            </div>
+                            <div class="cant">
+                                <label for="">{{cant}}</label>
+                            </div>
+                            <div class="mas"(click)="increase()">
+                                <label for="">+</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" >
+                        <button (click)="addCart()">Agregar al carrito</button>
+                    </div>
+                </div>
+                
+           </div>
+        </div>
+    </div>
+</div>
+  

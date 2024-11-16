@@ -1,0 +1,139 @@
+.card{
+    width: 40rem;
+    padding:1rem;
+  }
+  #pr{
+    width: 50rem;
+    padding:2rem;
+  }
+  .card-img-top{
+    height: auto;
+  }
+  h2{
+    text-transform: uppercase;
+  }
+  @media (max-width: 768px) {
+    .card{
+      width: 18rem;
+      max-width: 100%;
+     
+    }
+  }
+  @media (max-width: 1184px){
+    .card{
+      border: none;
+  
+     
+    }
+  }
+  h2{
+    font-family: 'Oswald', sans-serif;
+  }
+  h5, p{
+    font-family: 'Antonio', sans-serif;
+  }
+  .fot{
+    border:solid thin black;
+    
+  }
+  .small-img{
+    width:5.5rem;
+    padding: 2px;
+    border:solid thin #289346;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+  }
+  img{
+    width: 100%;
+  }
+  .det{
+    width: fit-content;
+    margin-right: 0.2rem;
+  }
+  .cul{
+    width: 3.5rem;
+  }
+  .cul:hover{
+    cursor: pointer;
+    
+  }
+  .color-filters{
+    display: flex;
+    gap:1rem;
+  }
+  .tal{
+    display: flex;
+    position: absolute;
+  }
+  button{
+    width: 5rem;
+    background-color: #ECEFF1;
+    border: none;
+    margin-left: 2rem;
+    
+  }
+  .co{
+    position: absolute;
+    left: 0;
+  }
+  .cul img{
+    margin-bottom: 1rem;
+  }
+  .cul img:hover{
+    border: solid thin gray;
+  }
+  h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  #colorL{
+    margin-top: 2rem;
+  }
+  .bot{
+    margin-top: 4rem;
+  }
+  .bton{
+    display: flex;
+    padding: 0.7rem 0rem;
+    border-radius: 40px;
+    border: solid thin gray;
+    font-size: 20px;
+    justify-content: space-evenly;
+  }
+  .bot button{
+    width: 100%;
+    border-radius: 40px;
+    margin-left: 0;
+    padding: 0.7rem 1.5rem;
+    background-color:#289346;
+    color: white;
+  }
+  .row{
+    align-items: center;
+  }
+  .bot .col{
+    padding: 0.5rem;
+    
+  }
+  .color-filters .cul img.active {
+    border: 2px solid #00B40D; 
+    box-shadow: 0 0 10px rgba(90, 241, 30, 0.5); 
+  }
+  button:hover{
+    cursor: pointer;
+  }
+  
+  .color-filters .cul .co .tal button.active {
+    background-color: #00B40D; 
+    color: white;
+  }
+  .disabled {
+    pointer-events: none;
+    opacity: 0.5; 
+    cursor: not-allowed;
+  }
+  .bton label:hover{
+    cursor: pointer;
+    font-weight: 600;
+  }

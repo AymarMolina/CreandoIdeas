@@ -5,6 +5,7 @@ import { HomeComponent } from './components/home/home.component';
 import { Component } from '@angular/core';
 import { ProductsComponent } from './components/products/products.component';
 import { PurchaseComponent } from './components/purchase/purchase.component';
+import { ProductIdComponent } from './product-id/product-id.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'inicio', pathMatch: 'full' },
@@ -13,6 +14,7 @@ export const routes: Routes = [
         children:[
             { path: '', component: HomeComponent },
             {path:'productos',component:ProductsComponent},
+            {path: 'producto/:id',component: ProductIdComponent},
             {path:'carro',component:PurchaseComponent}
         ]}
 

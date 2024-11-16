@@ -14,11 +14,17 @@
     justify-content: end;
     width: 60%;
 }
+.col-2 a{
+  text-decoration: none;
+}
 .but{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40%;
+}
+.but:hover{
+  cursor: pointer;
 }
 #nav {
     padding: 25px 15px;
